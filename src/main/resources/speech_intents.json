@@ -1,0 +1,191 @@
+
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "my weather",
+      "intents": [
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "ChangeCity",
+          "slots": [
+            {
+              "name": "cityForChange",
+              "type": "AMAZON.AdministrativeArea"
+            }
+          ],
+          "samples": [
+            "change to {cityForChange}"
+          ]
+        },
+        {
+          "name": "ChangeDay",
+          "slots": [
+            {
+              "name": "dayForChange",
+              "type": "DATE"
+            }
+          ],
+          "samples": [
+            "change to {dayForChange}"
+          ]
+        },
+        {
+          "name": "AskWeatherParam",
+          "slots": [
+            {
+              "name": "weatherParam",
+              "type": "DAILY_WEATHER_PARAMS"
+            }
+          ],
+          "samples": [
+            "{weatherParam}"
+          ]
+        },
+        {
+          "name": "RequestedDay",
+          "slots": [
+            {
+              "name": "dayRequested",
+              "type": "DATE"
+            }
+          ],
+          "samples": [
+            "on {dayRequested}",
+            "{dayRequested}"
+          ]
+        },
+        {
+          "name": "RequestedCity",
+          "slots": [
+            {
+              "name": "cityRequested",
+              "type": "AMAZON.AdministrativeArea"
+            }
+          ],
+          "samples": [
+            "at {cityRequested}",
+            "{cityRequested}"
+          ]
+        },
+        {
+          "name": "WeatherByCityIntent",
+          "slots": [
+            {
+              "name": "city",
+              "type": "AMAZON.AdministrativeArea"
+            }
+          ],
+          "samples": [
+            "what is the weather at {city}",
+            "what is the weather {city}",
+            "weather at {city}",
+            "weather {city}"
+          ]
+        },
+        {
+          "name": "WeatherByCityAndDayIntent",
+          "slots": [
+            {
+              "name": "cityByDay",
+              "type": "AMAZON.AdministrativeArea"
+            },
+            {
+              "name": "day",
+              "type": "DATE"
+            }
+          ],
+          "samples": [
+            "what is the weather at {cityByDay} on {day}",
+            "what is the weather {cityByDay} {day}",
+            "what is the weather at {cityByDay} {day}",
+            "what is the weather {cityByDay} on {day}",
+            "weather at {cityByDay} on {day}",
+            "weather {cityByDay} on {day}",
+            "weather at {cityByDay} {day}",
+            "weather {cityByDay} {day}"
+          ]
+        },
+        {
+          "name": "WeatherByCityAndTimeIntent",
+          "slots": [
+            {
+              "name": "cityByDayTime",
+              "type": "AMAZON.AdministrativeArea"
+            },
+            {
+              "name": "dayByTime",
+              "type": "DATE"
+            },
+            {
+              "name": "time",
+              "type": "TIME"
+            }
+          ],
+          "samples": [
+            "what is the weather at {cityByDayTime} on {dayByTime} at {time}",
+            "what is the weather {cityByDayTime} {dayByTime} at {time}",
+            "what is the weather at {cityByDayTime} {dayByTime} at {time}",
+            "what is the weather {cityByDayTime} on {dayByTime} at {time}",
+            "weather at {cityByDayTime} on {dayByTime} at {time}",
+            "weather {cityByDayTime} on {dayByTime} at {time}",
+            "weather at {cityByDayTime} {dayByTime} at {time}",
+            "weather {cityByDayTime} {dayByTime} at {time}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "name": "DAILY_WEATHER_PARAMS",
+          "values": [
+            {
+              "name": {
+                "value": "humidity"
+              }
+            },
+            {
+              "name": {
+                "value": "sunrise time"
+              }
+            },
+            {
+              "name": {
+                "value": "sunset time"
+              }
+            },
+            {
+              "name": {
+                "value": "wind speed"
+              }
+            },
+            {
+              "name": {
+                "value": "summary"
+              }
+            },
+            {
+              "name": {
+                "value": "minimum temperature"
+              }
+            },
+            {
+              "name": {
+                "value": "maximum temperature"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

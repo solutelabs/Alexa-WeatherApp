@@ -31,7 +31,7 @@ val SLOT_CITY = "city"
 
 val SLOT_TIME = "time"
 
-val API_KEY = "INSERT_DARK_SKY_API_KEY_HEARE"
+val API_KEY = "INSERT_DARK_SKY_API_KEY_HERE"
 
 val BASE_URL = "https://api.darksky.net/forecast/"
 

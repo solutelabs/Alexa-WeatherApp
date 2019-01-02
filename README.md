@@ -1,7 +1,7 @@
 # Alexa-WeatherApp
 
 The project contains aws lambda function to fetch weather information from [dark sky public api](https://darksky.net) and tell 
-appropriate response to skill users.
+appropriate response to skill users. You can enable MyWeather skill from [hear](https://www.amazon.com/Aakash-Mehta-MyWeather/dp/B07566BQJC/ref=sr_1_1?s=digital-skills&ie=UTF8&qid=1529490449&sr=1-1&keywords=MyWeather)
 
 ## Requirement : 
 - Java version >= 1.7

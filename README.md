@@ -9,7 +9,7 @@ appropriate response to skill users.
 - [Alexa Skills Kit](https://mvnrepository.com/artifact/com.amazon.alexa/alexa-skills-kit)
 - Apache dependencies : [Commons Lang](https://mvnrepository.com/artifact/org.apache.commons/commons-lang3), [HttpClient](https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient), [HttpCore](https://mvnrepository.com/artifact/org.apache.httpcomponents/httpcore)
 - AWS lambda dependencies : [java core](https://mvnrepository.com/artifact/com.amazonaws/aws-lambda-java-core), [log4j](https://mvnrepository.com/artifact/com.amazonaws/aws-lambda-java-log4j)
-- (DarkSky Forecast API)[https://mvnrepository.com/artifact/tk.plogitech/darksky-forecast-api]
+- [DarkSky Forecast API](https://mvnrepository.com/artifact/tk.plogitech/darksky-forecast-api)
 
 ## Implementation : 
 - To get basic idea to implement AWS lambda function for java follow this alexa sample skill [Hello world](https://github.com/alexa/skill-samples-java/tree/master/helloworld)
